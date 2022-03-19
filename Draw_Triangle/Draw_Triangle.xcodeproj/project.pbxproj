@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF1D749927E48920004C7E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D749827E48920004C7E3D /* AppDelegate.m */; };
+		FF1D749C27E48920004C7E3D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D749B27E48920004C7E3D /* SceneDelegate.m */; };
+		FF1D749F27E48920004C7E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D749E27E48920004C7E3D /* ViewController.m */; };
+		FF1D74A227E48920004C7E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1D74A027E48920004C7E3D /* Main.storyboard */; };
+		FF1D74A427E48922004C7E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1D74A327E48922004C7E3D /* Assets.xcassets */; };
+		FF1D74A727E48922004C7E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1D74A527E48922004C7E3D /* LaunchScreen.storyboard */; };
+		FF1D74AA27E48922004C7E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D74A927E48922004C7E3D /* main.m */; };
+		FF1D74B427E48922004C7E3D /* Draw_TriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D74B327E48922004C7E3D /* Draw_TriangleTests.m */; };
+		FF1D74BE27E48922004C7E3D /* Draw_TriangleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D74BD27E48922004C7E3D /* Draw_TriangleUITests.m */; };
+		FF1D74C027E48922004C7E3D /* Draw_TriangleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D74BF27E48922004C7E3D /* Draw_TriangleUITestsLaunchTests.m */; };
+		FF1D74D027E4897A004C7E3D /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF1D74CF27E4897A004C7E3D /* OpenGLView.mm */; };
+		FF1D74D627E4924F004C7E3D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1D74D527E4924F004C7E3D /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1D74B027E48922004C7E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1D748C27E48920004C7E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1D749327E48920004C7E3D;
+			remoteInfo = Draw_Triangle;
+		};
+		FF1D74BA27E48922004C7E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1D748C27E48920004C7E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1D749327E48920004C7E3D;
+			remoteInfo = Draw_Triangle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF1D749427E48920004C7E3D /* Draw_Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw_Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D749727E48920004C7E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF1D749827E48920004C7E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF1D749A27E48920004C7E3D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FF1D749B27E48920004C7E3D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FF1D749D27E48920004C7E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF1D749E27E48920004C7E3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF1D74A127E48920004C7E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1D74A327E48922004C7E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1D74A627E48922004C7E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1D74A827E48922004C7E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1D74A927E48922004C7E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF1D74AF27E48922004C7E3D /* Draw_TriangleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draw_TriangleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D74B327E48922004C7E3D /* Draw_TriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draw_TriangleTests.m; sourceTree = "<group>"; };
+		FF1D74B927E48922004C7E3D /* Draw_TriangleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draw_TriangleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1D74BD27E48922004C7E3D /* Draw_TriangleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draw_TriangleUITests.m; sourceTree = "<group>"; };
+		FF1D74BF27E48922004C7E3D /* Draw_TriangleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draw_TriangleUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FF1D74CE27E4897A004C7E3D /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		FF1D74CF27E4897A004C7E3D /* OpenGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		FF1D74D527E4924F004C7E3D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1D749127E48920004C7E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D74D627E4924F004C7E3D /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74AC27E48922004C7E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74B627E48922004C7E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF1D748B27E48920004C7E3D = {
+			isa = PBXGroup;
+			children = (
+				FF1D749627E48920004C7E3D /* Draw_Triangle */,
+				FF1D74B227E48922004C7E3D /* Draw_TriangleTests */,
+				FF1D74BC27E48922004C7E3D /* Draw_TriangleUITests */,
+				FF1D749527E48920004C7E3D /* Products */,
+				FF1D74D427E4924F004C7E3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1D749527E48920004C7E3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D749427E48920004C7E3D /* Draw_Triangle.app */,
+				FF1D74AF27E48922004C7E3D /* Draw_TriangleTests.xctest */,
+				FF1D74B927E48922004C7E3D /* Draw_TriangleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1D749627E48920004C7E3D /* Draw_Triangle */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D749727E48920004C7E3D /* AppDelegate.h */,
+				FF1D749827E48920004C7E3D /* AppDelegate.m */,
+				FF1D749A27E48920004C7E3D /* SceneDelegate.h */,
+				FF1D749B27E48920004C7E3D /* SceneDelegate.m */,
+				FF1D749D27E48920004C7E3D /* ViewController.h */,
+				FF1D74CE27E4897A004C7E3D /* OpenGLView.h */,
+				FF1D74CF27E4897A004C7E3D /* OpenGLView.mm */,
+				FF1D749E27E48920004C7E3D /* ViewController.m */,
+				FF1D74A027E48920004C7E3D /* Main.storyboard */,
+				FF1D74A327E48922004C7E3D /* Assets.xcassets */,
+				FF1D74A527E48922004C7E3D /* LaunchScreen.storyboard */,
+				FF1D74A827E48922004C7E3D /* Info.plist */,
+				FF1D74A927E48922004C7E3D /* main.m */,
+			);
+			path = Draw_Triangle;
+			sourceTree = "<group>";
+		};
+		FF1D74B227E48922004C7E3D /* Draw_TriangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D74B327E48922004C7E3D /* Draw_TriangleTests.m */,
+			);
+			path = Draw_TriangleTests;
+			sourceTree = "<group>";
+		};
+		FF1D74BC27E48922004C7E3D /* Draw_TriangleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D74BD27E48922004C7E3D /* Draw_TriangleUITests.m */,
+				FF1D74BF27E48922004C7E3D /* Draw_TriangleUITestsLaunchTests.m */,
+			);
+			path = Draw_TriangleUITests;
+			sourceTree = "<group>";
+		};
+		FF1D74D427E4924F004C7E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF1D74D527E4924F004C7E3D /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1D749327E48920004C7E3D /* Draw_Triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D74C327E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_Triangle" */;
+			buildPhases = (
+				FF1D749027E48920004C7E3D /* Sources */,
+				FF1D749127E48920004C7E3D /* Frameworks */,
+				FF1D749227E48920004C7E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Draw_Triangle;
+			productName = Draw_Triangle;
+			productReference = FF1D749427E48920004C7E3D /* Draw_Triangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1D74AE27E48922004C7E3D /* Draw_TriangleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D74C627E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_TriangleTests" */;
+			buildPhases = (
+				FF1D74AB27E48922004C7E3D /* Sources */,
+				FF1D74AC27E48922004C7E3D /* Frameworks */,
+				FF1D74AD27E48922004C7E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1D74B127E48922004C7E3D /* PBXTargetDependency */,
+			);
+			name = Draw_TriangleTests;
+			productName = Draw_TriangleTests;
+			productReference = FF1D74AF27E48922004C7E3D /* Draw_TriangleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1D74B827E48922004C7E3D /* Draw_TriangleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1D74C927E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_TriangleUITests" */;
+			buildPhases = (
+				FF1D74B527E48922004C7E3D /* Sources */,
+				FF1D74B627E48922004C7E3D /* Frameworks */,
+				FF1D74B727E48922004C7E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1D74BB27E48922004C7E3D /* PBXTargetDependency */,
+			);
+			name = Draw_TriangleUITests;
+			productName = Draw_TriangleUITests;
+			productReference = FF1D74B927E48922004C7E3D /* Draw_TriangleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1D748C27E48920004C7E3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FF1D749327E48920004C7E3D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					FF1D74AE27E48922004C7E3D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = FF1D749327E48920004C7E3D;
+					};
+					FF1D74B827E48922004C7E3D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = FF1D749327E48920004C7E3D;
+					};
+				};
+			};
+			buildConfigurationList = FF1D748F27E48920004C7E3D /* Build configuration list for PBXProject "Draw_Triangle" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1D748B27E48920004C7E3D;
+			productRefGroup = FF1D749527E48920004C7E3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1D749327E48920004C7E3D /* Draw_Triangle */,
+				FF1D74AE27E48922004C7E3D /* Draw_TriangleTests */,
+				FF1D74B827E48922004C7E3D /* Draw_TriangleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1D749227E48920004C7E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D74A727E48922004C7E3D /* LaunchScreen.storyboard in Resources */,
+				FF1D74A427E48922004C7E3D /* Assets.xcassets in Resources */,
+				FF1D74A227E48920004C7E3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74AD27E48922004C7E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74B727E48922004C7E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1D749027E48920004C7E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D749F27E48920004C7E3D /* ViewController.m in Sources */,
+				FF1D749927E48920004C7E3D /* AppDelegate.m in Sources */,
+				FF1D74AA27E48922004C7E3D /* main.m in Sources */,
+				FF1D749C27E48920004C7E3D /* SceneDelegate.m in Sources */,
+				FF1D74D027E4897A004C7E3D /* OpenGLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74AB27E48922004C7E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D74B427E48922004C7E3D /* Draw_TriangleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1D74B527E48922004C7E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1D74C027E48922004C7E3D /* Draw_TriangleUITestsLaunchTests.m in Sources */,
+				FF1D74BE27E48922004C7E3D /* Draw_TriangleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1D74B127E48922004C7E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1D749327E48920004C7E3D /* Draw_Triangle */;
+			targetProxy = FF1D74B027E48922004C7E3D /* PBXContainerItemProxy */;
+		};
+		FF1D74BB27E48922004C7E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1D749327E48920004C7E3D /* Draw_Triangle */;
+			targetProxy = FF1D74BA27E48922004C7E3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF1D74A027E48920004C7E3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1D74A127E48920004C7E3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1D74A527E48922004C7E3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1D74A627E48922004C7E3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1D74C127E48922004C7E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF1D74C227E48922004C7E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1D74C427E48922004C7E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Draw_Triangle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-Triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1D74C527E48922004C7E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Draw_Triangle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-Triangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF1D74C727E48922004C7E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-TriangleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw_Triangle.app/Draw_Triangle";
+			};
+			name = Debug;
+		};
+		FF1D74C827E48922004C7E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-TriangleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw_Triangle.app/Draw_Triangle";
+			};
+			name = Release;
+		};
+		FF1D74CA27E48922004C7E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-TriangleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Draw_Triangle;
+			};
+			name = Debug;
+		};
+		FF1D74CB27E48922004C7E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Draw-TriangleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Draw_Triangle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1D748F27E48920004C7E3D /* Build configuration list for PBXProject "Draw_Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D74C127E48922004C7E3D /* Debug */,
+				FF1D74C227E48922004C7E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D74C327E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_Triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D74C427E48922004C7E3D /* Debug */,
+				FF1D74C527E48922004C7E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D74C627E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_TriangleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D74C727E48922004C7E3D /* Debug */,
+				FF1D74C827E48922004C7E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1D74C927E48922004C7E3D /* Build configuration list for PBXNativeTarget "Draw_TriangleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1D74CA27E48922004C7E3D /* Debug */,
+				FF1D74CB27E48922004C7E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1D748C27E48920004C7E3D /* Project object */;
+}
