@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF97CB0A27E5D83300C6886B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB0927E5D83300C6886B /* AppDelegate.m */; };
+		FF97CB0D27E5D83300C6886B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB0C27E5D83300C6886B /* SceneDelegate.m */; };
+		FF97CB1027E5D83300C6886B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB0F27E5D83300C6886B /* ViewController.m */; };
+		FF97CB1327E5D83300C6886B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97CB1127E5D83300C6886B /* Main.storyboard */; };
+		FF97CB1527E5D83400C6886B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF97CB1427E5D83400C6886B /* Assets.xcassets */; };
+		FF97CB1827E5D83400C6886B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97CB1627E5D83400C6886B /* LaunchScreen.storyboard */; };
+		FF97CB1B27E5D83400C6886B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB1A27E5D83400C6886B /* main.m */; };
+		FF97CB2527E5D83400C6886B /* Use_libpngTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB2427E5D83400C6886B /* Use_libpngTests.m */; };
+		FF97CB2F27E5D83400C6886B /* Use_libpngUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB2E27E5D83400C6886B /* Use_libpngUITests.m */; };
+		FF97CB3127E5D83400C6886B /* Use_libpngUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB3027E5D83400C6886B /* Use_libpngUITestsLaunchTests.m */; };
+		FF97CB4227E5DD7000C6886B /* ImageParse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB4027E5DD7000C6886B /* ImageParse.cpp */; };
+		FF97CB4A27E5DDEB00C6886B /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97CB4927E5DDEB00C6886B /* libpng.a */; };
+		FF97CB4D27E5E04B00C6886B /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97CB4C27E5E04300C6886B /* libbz2.tbd */; };
+		FF97CB4F27E5E06A00C6886B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97CB4E27E5E06200C6886B /* libc++.tbd */; };
+		FF97CB5127E5E0B900C6886B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97CB5027E5E0B400C6886B /* libz.tbd */; };
+		FF97CB5427E5E12900C6886B /* OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF97CB5327E5E12900C6886B /* OpenGLView.mm */; };
+		FF97CB5B27E609D500C6886B /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = FF97CB5927E609D500C6886B /* flower.png */; };
+		FF97CB5C27E609D500C6886B /* rose.png in Resources */ = {isa = PBXBuildFile; fileRef = FF97CB5A27E609D500C6886B /* rose.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF97CB2127E5D83400C6886B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97CAFD27E5D83300C6886B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF97CB0427E5D83300C6886B;
+			remoteInfo = Use_libpng;
+		};
+		FF97CB2B27E5D83400C6886B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97CAFD27E5D83300C6886B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF97CB0427E5D83300C6886B;
+			remoteInfo = Use_libpng;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF97CB0527E5D83300C6886B /* Use_libpng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Use_libpng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF97CB0827E5D83300C6886B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF97CB0927E5D83300C6886B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF97CB0B27E5D83300C6886B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FF97CB0C27E5D83300C6886B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FF97CB0E27E5D83300C6886B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF97CB0F27E5D83300C6886B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF97CB1227E5D83300C6886B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF97CB1427E5D83400C6886B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF97CB1727E5D83400C6886B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF97CB1927E5D83400C6886B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF97CB1A27E5D83400C6886B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF97CB2027E5D83400C6886B /* Use_libpngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Use_libpngTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF97CB2427E5D83400C6886B /* Use_libpngTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Use_libpngTests.m; sourceTree = "<group>"; };
+		FF97CB2A27E5D83400C6886B /* Use_libpngUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Use_libpngUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF97CB2E27E5D83400C6886B /* Use_libpngUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Use_libpngUITests.m; sourceTree = "<group>"; };
+		FF97CB3027E5D83400C6886B /* Use_libpngUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Use_libpngUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FF97CB4027E5DD7000C6886B /* ImageParse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageParse.cpp; sourceTree = "<group>"; };
+		FF97CB4127E5DD7000C6886B /* ImageParse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageParse.hpp; sourceTree = "<group>"; };
+		FF97CB4527E5DDEB00C6886B /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		FF97CB4627E5DDEB00C6886B /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		FF97CB4727E5DDEB00C6886B /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		FF97CB4927E5DDEB00C6886B /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		FF97CB4C27E5E04300C6886B /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		FF97CB4E27E5E06200C6886B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FF97CB5027E5E0B400C6886B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FF97CB5227E5E12900C6886B /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		FF97CB5327E5E12900C6886B /* OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLView.mm; sourceTree = "<group>"; };
+		FF97CB5927E609D500C6886B /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower.png; sourceTree = "<group>"; };
+		FF97CB5A27E609D500C6886B /* rose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rose.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF97CB0227E5D83300C6886B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97CB4F27E5E06A00C6886B /* libc++.tbd in Frameworks */,
+				FF97CB5127E5E0B900C6886B /* libz.tbd in Frameworks */,
+				FF97CB4A27E5DDEB00C6886B /* libpng.a in Frameworks */,
+				FF97CB4D27E5E04B00C6886B /* libbz2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB1D27E5D83400C6886B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB2727E5D83400C6886B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF97CAFC27E5D83300C6886B = {
+			isa = PBXGroup;
+			children = (
+				FF97CB0727E5D83300C6886B /* Use_libpng */,
+				FF97CB2327E5D83400C6886B /* Use_libpngTests */,
+				FF97CB2D27E5D83400C6886B /* Use_libpngUITests */,
+				FF97CB0627E5D83300C6886B /* Products */,
+				FF97CB4B27E5E04300C6886B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF97CB0627E5D83300C6886B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB0527E5D83300C6886B /* Use_libpng.app */,
+				FF97CB2027E5D83400C6886B /* Use_libpngTests.xctest */,
+				FF97CB2A27E5D83400C6886B /* Use_libpngUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF97CB0727E5D83300C6886B /* Use_libpng */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB5927E609D500C6886B /* flower.png */,
+				FF97CB5A27E609D500C6886B /* rose.png */,
+				FF97CB5227E5E12900C6886B /* OpenGLView.h */,
+				FF97CB5327E5E12900C6886B /* OpenGLView.mm */,
+				FF97CB4327E5DDEB00C6886B /* libpng */,
+				FF97CB0827E5D83300C6886B /* AppDelegate.h */,
+				FF97CB0927E5D83300C6886B /* AppDelegate.m */,
+				FF97CB0B27E5D83300C6886B /* SceneDelegate.h */,
+				FF97CB0C27E5D83300C6886B /* SceneDelegate.m */,
+				FF97CB0E27E5D83300C6886B /* ViewController.h */,
+				FF97CB0F27E5D83300C6886B /* ViewController.m */,
+				FF97CB1127E5D83300C6886B /* Main.storyboard */,
+				FF97CB1427E5D83400C6886B /* Assets.xcassets */,
+				FF97CB1627E5D83400C6886B /* LaunchScreen.storyboard */,
+				FF97CB1927E5D83400C6886B /* Info.plist */,
+				FF97CB1A27E5D83400C6886B /* main.m */,
+				FF97CB4027E5DD7000C6886B /* ImageParse.cpp */,
+				FF97CB4127E5DD7000C6886B /* ImageParse.hpp */,
+			);
+			path = Use_libpng;
+			sourceTree = "<group>";
+		};
+		FF97CB2327E5D83400C6886B /* Use_libpngTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB2427E5D83400C6886B /* Use_libpngTests.m */,
+			);
+			path = Use_libpngTests;
+			sourceTree = "<group>";
+		};
+		FF97CB2D27E5D83400C6886B /* Use_libpngUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB2E27E5D83400C6886B /* Use_libpngUITests.m */,
+				FF97CB3027E5D83400C6886B /* Use_libpngUITestsLaunchTests.m */,
+			);
+			path = Use_libpngUITests;
+			sourceTree = "<group>";
+		};
+		FF97CB4327E5DDEB00C6886B /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB4427E5DDEB00C6886B /* include */,
+				FF97CB4827E5DDEB00C6886B /* libs */,
+			);
+			path = libpng;
+			sourceTree = "<group>";
+		};
+		FF97CB4427E5DDEB00C6886B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB4527E5DDEB00C6886B /* png.h */,
+				FF97CB4627E5DDEB00C6886B /* pnglibconf.h */,
+				FF97CB4727E5DDEB00C6886B /* pngconf.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		FF97CB4827E5DDEB00C6886B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB4927E5DDEB00C6886B /* libpng.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		FF97CB4B27E5E04300C6886B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF97CB5027E5E0B400C6886B /* libz.tbd */,
+				FF97CB4E27E5E06200C6886B /* libc++.tbd */,
+				FF97CB4C27E5E04300C6886B /* libbz2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF97CB0427E5D83300C6886B /* Use_libpng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF97CB3427E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpng" */;
+			buildPhases = (
+				FF97CB0127E5D83300C6886B /* Sources */,
+				FF97CB0227E5D83300C6886B /* Frameworks */,
+				FF97CB0327E5D83300C6886B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Use_libpng;
+			productName = Use_libpng;
+			productReference = FF97CB0527E5D83300C6886B /* Use_libpng.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF97CB1F27E5D83400C6886B /* Use_libpngTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF97CB3727E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpngTests" */;
+			buildPhases = (
+				FF97CB1C27E5D83400C6886B /* Sources */,
+				FF97CB1D27E5D83400C6886B /* Frameworks */,
+				FF97CB1E27E5D83400C6886B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF97CB2227E5D83400C6886B /* PBXTargetDependency */,
+			);
+			name = Use_libpngTests;
+			productName = Use_libpngTests;
+			productReference = FF97CB2027E5D83400C6886B /* Use_libpngTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF97CB2927E5D83400C6886B /* Use_libpngUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF97CB3A27E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpngUITests" */;
+			buildPhases = (
+				FF97CB2627E5D83400C6886B /* Sources */,
+				FF97CB2727E5D83400C6886B /* Frameworks */,
+				FF97CB2827E5D83400C6886B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF97CB2C27E5D83400C6886B /* PBXTargetDependency */,
+			);
+			name = Use_libpngUITests;
+			productName = Use_libpngUITests;
+			productReference = FF97CB2A27E5D83400C6886B /* Use_libpngUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF97CAFD27E5D83300C6886B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FF97CB0427E5D83300C6886B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FF97CB1F27E5D83400C6886B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FF97CB0427E5D83300C6886B;
+					};
+					FF97CB2927E5D83400C6886B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FF97CB0427E5D83300C6886B;
+					};
+				};
+			};
+			buildConfigurationList = FF97CB0027E5D83300C6886B /* Build configuration list for PBXProject "Use_libpng" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF97CAFC27E5D83300C6886B;
+			productRefGroup = FF97CB0627E5D83300C6886B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF97CB0427E5D83300C6886B /* Use_libpng */,
+				FF97CB1F27E5D83400C6886B /* Use_libpngTests */,
+				FF97CB2927E5D83400C6886B /* Use_libpngUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF97CB0327E5D83300C6886B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97CB5B27E609D500C6886B /* flower.png in Resources */,
+				FF97CB5C27E609D500C6886B /* rose.png in Resources */,
+				FF97CB1827E5D83400C6886B /* LaunchScreen.storyboard in Resources */,
+				FF97CB1527E5D83400C6886B /* Assets.xcassets in Resources */,
+				FF97CB1327E5D83300C6886B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB1E27E5D83400C6886B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB2827E5D83400C6886B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF97CB0127E5D83300C6886B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97CB1027E5D83300C6886B /* ViewController.m in Sources */,
+				FF97CB0A27E5D83300C6886B /* AppDelegate.m in Sources */,
+				FF97CB1B27E5D83400C6886B /* main.m in Sources */,
+				FF97CB5427E5E12900C6886B /* OpenGLView.mm in Sources */,
+				FF97CB0D27E5D83300C6886B /* SceneDelegate.m in Sources */,
+				FF97CB4227E5DD7000C6886B /* ImageParse.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB1C27E5D83400C6886B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97CB2527E5D83400C6886B /* Use_libpngTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97CB2627E5D83400C6886B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97CB3127E5D83400C6886B /* Use_libpngUITestsLaunchTests.m in Sources */,
+				FF97CB2F27E5D83400C6886B /* Use_libpngUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF97CB2227E5D83400C6886B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF97CB0427E5D83300C6886B /* Use_libpng */;
+			targetProxy = FF97CB2127E5D83400C6886B /* PBXContainerItemProxy */;
+		};
+		FF97CB2C27E5D83400C6886B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF97CB0427E5D83300C6886B /* Use_libpng */;
+			targetProxy = FF97CB2B27E5D83400C6886B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF97CB1127E5D83300C6886B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF97CB1227E5D83300C6886B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF97CB1627E5D83400C6886B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF97CB1727E5D83400C6886B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF97CB3227E5D83400C6886B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF97CB3327E5D83400C6886B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF97CB3527E5D83500C6886B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Use_libpng/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Use_libpng/libpng/libs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpng";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF97CB3627E5D83500C6886B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Use_libpng/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Use_libpng/libpng/libs",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpng";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF97CB3827E5D83500C6886B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpngTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Use_libpng.app/Use_libpng";
+			};
+			name = Debug;
+		};
+		FF97CB3927E5D83500C6886B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpngTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Use_libpng.app/Use_libpng";
+			};
+			name = Release;
+		};
+		FF97CB3B27E5D83500C6886B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpngUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Use_libpng;
+			};
+			name = Debug;
+		};
+		FF97CB3C27E5D83500C6886B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.Use-libpngUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Use_libpng;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF97CB0027E5D83300C6886B /* Build configuration list for PBXProject "Use_libpng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF97CB3227E5D83400C6886B /* Debug */,
+				FF97CB3327E5D83400C6886B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF97CB3427E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF97CB3527E5D83500C6886B /* Debug */,
+				FF97CB3627E5D83500C6886B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF97CB3727E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpngTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF97CB3827E5D83500C6886B /* Debug */,
+				FF97CB3927E5D83500C6886B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF97CB3A27E5D83500C6886B /* Build configuration list for PBXNativeTarget "Use_libpngUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF97CB3B27E5D83500C6886B /* Debug */,
+				FF97CB3C27E5D83500C6886B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF97CAFD27E5D83300C6886B /* Project object */;
+}
