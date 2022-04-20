@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF575A67280F845D00E923DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A66280F845D00E923DE /* AppDelegate.m */; };
+		FF575A6A280F845D00E923DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A69280F845D00E923DE /* SceneDelegate.m */; };
+		FF575A6D280F845D00E923DE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF575A6C280F845D00E923DE /* ViewController.mm */; };
+		FF575A70280F845D00E923DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF575A6E280F845D00E923DE /* Main.storyboard */; };
+		FF575A72280F845E00E923DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF575A71280F845E00E923DE /* Assets.xcassets */; };
+		FF575A75280F845E00E923DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF575A73280F845E00E923DE /* LaunchScreen.storyboard */; };
+		FF575A78280F845E00E923DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A77280F845E00E923DE /* main.m */; };
+		FF575A82280F845E00E923DE /* BlinnPhong_Light_ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A81280F845E00E923DE /* BlinnPhong_Light_ModelTests.m */; };
+		FF575A8C280F845E00E923DE /* BlinnPhong_Light_ModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A8B280F845E00E923DE /* BlinnPhong_Light_ModelUITests.m */; };
+		FF575A8E280F845E00E923DE /* BlinnPhong_Light_ModelUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF575A8D280F845E00E923DE /* BlinnPhong_Light_ModelUITestsLaunchTests.m */; };
+		FF575A9C280F847400E923DE /* Model3D.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF575A9A280F847400E923DE /* Model3D.mm */; };
+		FF575A9F280F852C00E923DE /* lodepng.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF575A9E280F852C00E923DE /* lodepng.mm */; };
+		FF575AA2280F856B00E923DE /* fort.png in Resources */ = {isa = PBXBuildFile; fileRef = FF575AA0280F856B00E923DE /* fort.png */; };
+		FF575AA5280F859300E923DE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF575AA4280F859300E923DE /* GLKit.framework */; };
+		FF575AA7280F859900E923DE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF575AA6280F859900E923DE /* OpenGLES.framework */; };
+		FF575AAA280F877F00E923DE /* LightingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF575AA8280F877F00E923DE /* LightingShader.fsh */; };
+		FF575AAB280F877F00E923DE /* LightingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FF575AA9280F877F00E923DE /* LightingShader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF575A7E280F845E00E923DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF575A5A280F845D00E923DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF575A61280F845D00E923DE;
+			remoteInfo = BlinnPhong_Light_Model;
+		};
+		FF575A88280F845E00E923DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF575A5A280F845D00E923DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF575A61280F845D00E923DE;
+			remoteInfo = BlinnPhong_Light_Model;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF575A62280F845D00E923DE /* BlinnPhong_Light_Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlinnPhong_Light_Model.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF575A65280F845D00E923DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF575A66280F845D00E923DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF575A68280F845D00E923DE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FF575A69280F845D00E923DE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FF575A6B280F845D00E923DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF575A6C280F845D00E923DE /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FF575A6F280F845D00E923DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF575A71280F845E00E923DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF575A74280F845E00E923DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF575A76280F845E00E923DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF575A77280F845E00E923DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF575A7D280F845E00E923DE /* BlinnPhong_Light_ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinnPhong_Light_ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF575A81280F845E00E923DE /* BlinnPhong_Light_ModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinnPhong_Light_ModelTests.m; sourceTree = "<group>"; };
+		FF575A87280F845E00E923DE /* BlinnPhong_Light_ModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinnPhong_Light_ModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF575A8B280F845E00E923DE /* BlinnPhong_Light_ModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinnPhong_Light_ModelUITests.m; sourceTree = "<group>"; };
+		FF575A8D280F845E00E923DE /* BlinnPhong_Light_ModelUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinnPhong_Light_ModelUITestsLaunchTests.m; sourceTree = "<group>"; };
+		FF575A9A280F847400E923DE /* Model3D.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Model3D.mm; sourceTree = "<group>"; };
+		FF575A9B280F847400E923DE /* Model3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model3D.hpp; sourceTree = "<group>"; };
+		FF575A9D280F852B00E923DE /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		FF575A9E280F852C00E923DE /* lodepng.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = lodepng.mm; sourceTree = "<group>"; };
+		FF575AA0280F856B00E923DE /* fort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fort.png; sourceTree = "<group>"; };
+		FF575AA1280F856B00E923DE /* Fort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fort.h; sourceTree = "<group>"; };
+		FF575AA4280F859300E923DE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FF575AA6280F859900E923DE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FF575AA8280F877F00E923DE /* LightingShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LightingShader.fsh; sourceTree = "<group>"; };
+		FF575AA9280F877F00E923DE /* LightingShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LightingShader.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF575A5F280F845D00E923DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF575AA5280F859300E923DE /* GLKit.framework in Frameworks */,
+				FF575AA7280F859900E923DE /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A7A280F845E00E923DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A84280F845E00E923DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF575A59280F845D00E923DE = {
+			isa = PBXGroup;
+			children = (
+				FF575A64280F845D00E923DE /* BlinnPhong_Light_Model */,
+				FF575A80280F845E00E923DE /* BlinnPhong_Light_ModelTests */,
+				FF575A8A280F845E00E923DE /* BlinnPhong_Light_ModelUITests */,
+				FF575A63280F845D00E923DE /* Products */,
+				FF575AA3280F859300E923DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF575A63280F845D00E923DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF575A62280F845D00E923DE /* BlinnPhong_Light_Model.app */,
+				FF575A7D280F845E00E923DE /* BlinnPhong_Light_ModelTests.xctest */,
+				FF575A87280F845E00E923DE /* BlinnPhong_Light_ModelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF575A64280F845D00E923DE /* BlinnPhong_Light_Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF575AA8280F877F00E923DE /* LightingShader.fsh */,
+				FF575AA9280F877F00E923DE /* LightingShader.vsh */,
+				FF575AA1280F856B00E923DE /* Fort.h */,
+				FF575AA0280F856B00E923DE /* fort.png */,
+				FF575A9D280F852B00E923DE /* lodepng.h */,
+				FF575A9E280F852C00E923DE /* lodepng.mm */,
+				FF575A9A280F847400E923DE /* Model3D.mm */,
+				FF575A9B280F847400E923DE /* Model3D.hpp */,
+				FF575A65280F845D00E923DE /* AppDelegate.h */,
+				FF575A66280F845D00E923DE /* AppDelegate.m */,
+				FF575A68280F845D00E923DE /* SceneDelegate.h */,
+				FF575A69280F845D00E923DE /* SceneDelegate.m */,
+				FF575A6B280F845D00E923DE /* ViewController.h */,
+				FF575A6C280F845D00E923DE /* ViewController.mm */,
+				FF575A6E280F845D00E923DE /* Main.storyboard */,
+				FF575A71280F845E00E923DE /* Assets.xcassets */,
+				FF575A73280F845E00E923DE /* LaunchScreen.storyboard */,
+				FF575A76280F845E00E923DE /* Info.plist */,
+				FF575A77280F845E00E923DE /* main.m */,
+			);
+			path = BlinnPhong_Light_Model;
+			sourceTree = "<group>";
+		};
+		FF575A80280F845E00E923DE /* BlinnPhong_Light_ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF575A81280F845E00E923DE /* BlinnPhong_Light_ModelTests.m */,
+			);
+			path = BlinnPhong_Light_ModelTests;
+			sourceTree = "<group>";
+		};
+		FF575A8A280F845E00E923DE /* BlinnPhong_Light_ModelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF575A8B280F845E00E923DE /* BlinnPhong_Light_ModelUITests.m */,
+				FF575A8D280F845E00E923DE /* BlinnPhong_Light_ModelUITestsLaunchTests.m */,
+			);
+			path = BlinnPhong_Light_ModelUITests;
+			sourceTree = "<group>";
+		};
+		FF575AA3280F859300E923DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF575AA6280F859900E923DE /* OpenGLES.framework */,
+				FF575AA4280F859300E923DE /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF575A61280F845D00E923DE /* BlinnPhong_Light_Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF575A91280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_Model" */;
+			buildPhases = (
+				FF575A5E280F845D00E923DE /* Sources */,
+				FF575A5F280F845D00E923DE /* Frameworks */,
+				FF575A60280F845D00E923DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlinnPhong_Light_Model;
+			productName = BlinnPhong_Light_Model;
+			productReference = FF575A62280F845D00E923DE /* BlinnPhong_Light_Model.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF575A7C280F845E00E923DE /* BlinnPhong_Light_ModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF575A94280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_ModelTests" */;
+			buildPhases = (
+				FF575A79280F845E00E923DE /* Sources */,
+				FF575A7A280F845E00E923DE /* Frameworks */,
+				FF575A7B280F845E00E923DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF575A7F280F845E00E923DE /* PBXTargetDependency */,
+			);
+			name = BlinnPhong_Light_ModelTests;
+			productName = BlinnPhong_Light_ModelTests;
+			productReference = FF575A7D280F845E00E923DE /* BlinnPhong_Light_ModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF575A86280F845E00E923DE /* BlinnPhong_Light_ModelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF575A97280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_ModelUITests" */;
+			buildPhases = (
+				FF575A83280F845E00E923DE /* Sources */,
+				FF575A84280F845E00E923DE /* Frameworks */,
+				FF575A85280F845E00E923DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF575A89280F845E00E923DE /* PBXTargetDependency */,
+			);
+			name = BlinnPhong_Light_ModelUITests;
+			productName = BlinnPhong_Light_ModelUITests;
+			productReference = FF575A87280F845E00E923DE /* BlinnPhong_Light_ModelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF575A5A280F845D00E923DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FF575A61280F845D00E923DE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FF575A7C280F845E00E923DE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FF575A61280F845D00E923DE;
+					};
+					FF575A86280F845E00E923DE = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = FF575A61280F845D00E923DE;
+					};
+				};
+			};
+			buildConfigurationList = FF575A5D280F845D00E923DE /* Build configuration list for PBXProject "BlinnPhong_Light_Model" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF575A59280F845D00E923DE;
+			productRefGroup = FF575A63280F845D00E923DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF575A61280F845D00E923DE /* BlinnPhong_Light_Model */,
+				FF575A7C280F845E00E923DE /* BlinnPhong_Light_ModelTests */,
+				FF575A86280F845E00E923DE /* BlinnPhong_Light_ModelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF575A60280F845D00E923DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF575AAB280F877F00E923DE /* LightingShader.vsh in Resources */,
+				FF575A75280F845E00E923DE /* LaunchScreen.storyboard in Resources */,
+				FF575AAA280F877F00E923DE /* LightingShader.fsh in Resources */,
+				FF575A72280F845E00E923DE /* Assets.xcassets in Resources */,
+				FF575AA2280F856B00E923DE /* fort.png in Resources */,
+				FF575A70280F845D00E923DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A7B280F845E00E923DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A85280F845E00E923DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF575A5E280F845D00E923DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF575A6D280F845D00E923DE /* ViewController.mm in Sources */,
+				FF575A67280F845D00E923DE /* AppDelegate.m in Sources */,
+				FF575A78280F845E00E923DE /* main.m in Sources */,
+				FF575A9F280F852C00E923DE /* lodepng.mm in Sources */,
+				FF575A6A280F845D00E923DE /* SceneDelegate.m in Sources */,
+				FF575A9C280F847400E923DE /* Model3D.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A79280F845E00E923DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF575A82280F845E00E923DE /* BlinnPhong_Light_ModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF575A83280F845E00E923DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF575A8E280F845E00E923DE /* BlinnPhong_Light_ModelUITestsLaunchTests.m in Sources */,
+				FF575A8C280F845E00E923DE /* BlinnPhong_Light_ModelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF575A7F280F845E00E923DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF575A61280F845D00E923DE /* BlinnPhong_Light_Model */;
+			targetProxy = FF575A7E280F845E00E923DE /* PBXContainerItemProxy */;
+		};
+		FF575A89280F845E00E923DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF575A61280F845D00E923DE /* BlinnPhong_Light_Model */;
+			targetProxy = FF575A88280F845E00E923DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF575A6E280F845D00E923DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF575A6F280F845D00E923DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF575A73280F845E00E923DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF575A74280F845E00E923DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF575A8F280F845E00E923DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF575A90280F845E00E923DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF575A92280F845E00E923DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GLES_SILENCE_DEPRECATION,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlinnPhong_Light_Model/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-Model";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF575A93280F845E00E923DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlinnPhong_Light_Model/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-Model";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF575A95280F845E00E923DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-ModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlinnPhong_Light_Model.app/BlinnPhong_Light_Model";
+			};
+			name = Debug;
+		};
+		FF575A96280F845E00E923DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-ModelTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlinnPhong_Light_Model.app/BlinnPhong_Light_Model";
+			};
+			name = Release;
+		};
+		FF575A98280F845E00E923DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-ModelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlinnPhong_Light_Model;
+			};
+			name = Debug;
+		};
+		FF575A99280F845E00E923DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ET3SY67GVF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hsp.org.BlinnPhong-Light-ModelUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlinnPhong_Light_Model;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF575A5D280F845D00E923DE /* Build configuration list for PBXProject "BlinnPhong_Light_Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF575A8F280F845E00E923DE /* Debug */,
+				FF575A90280F845E00E923DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF575A91280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF575A92280F845E00E923DE /* Debug */,
+				FF575A93280F845E00E923DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF575A94280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_ModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF575A95280F845E00E923DE /* Debug */,
+				FF575A96280F845E00E923DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF575A97280F845E00E923DE /* Build configuration list for PBXNativeTarget "BlinnPhong_Light_ModelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF575A98280F845E00E923DE /* Debug */,
+				FF575A99280F845E00E923DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF575A5A280F845D00E923DE /* Project object */;
+}
