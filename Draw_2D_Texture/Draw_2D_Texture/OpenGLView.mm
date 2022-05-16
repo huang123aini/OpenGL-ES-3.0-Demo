@@ -120,6 +120,9 @@ GLuint texture_id;
 }
 
 - (void)render {
+    /**
+     *设置视口
+     */
     glViewport(0, 0, self.frame.size.width, self.frame.size.height);
     glClearColor(1.f, 0.0, 0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
@@ -168,11 +171,17 @@ GLuint texture_id;
     CGContextRelease(spriteContext);
     GLuint texName;
     glGenTextures(1, &texName);
+    /**
+     *绑定纹理,设置Sampler属性
+     */
     glBindTexture(GL_TEXTURE_2D, texName);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    /**
+     *加载纹理数据
+     */
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, spriteData);
     free(spriteData);
     return texName;
@@ -266,6 +275,9 @@ int initOpenGL(void) {
     
     glUseProgram(programObject);
     
+    /**
+     *program 关联 attribute,uniform
+     */
     aPosition = glGetAttribLocation(programObject, "aPosition");
     aTexCoord = glGetAttribLocation(programObject, "aTexCoord");
     uSampler = glGetUniformLocation(programObject, "uSampler");
@@ -299,11 +311,20 @@ void renderImage() {
     glUseProgram(programObject);
     
     glEnableVertexAttribArray(aPosition);
+    /**
+     *绑定顶点数据
+     */
     glVertexAttribPointer(aPosition, 3, GL_FLOAT, GL_FALSE, 0, vertices);
     
     glEnableVertexAttribArray(aTexCoord);
+    /**
+     *绑定纹理数据
+     */
     glVertexAttribPointer(aTexCoord, 2, GL_FLOAT, GL_FALSE, 0, texCoords);
 
+    /**
+     *激活纹理单元
+     */
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture_id);
     glUniform1i(uSampler, 0);
